@@ -13,24 +13,6 @@ int main()
 	return 0;
 }
 
-void createnode(int value)
-{
-	node *temp=new node;
-	temp->data=value;
-	temp->next=NULL;
-	if(head==NULL)
-	{
-		head=temp;
-		tail=temp;
-		temp=NULL;
-	}
-	else
-	{	
-		tail->next=temp;
-		tail=temp;
-	}
-}
-
 struct Node { 
 public: 
     int data; 
@@ -47,6 +29,24 @@ class list
       head=NULL;
       tail=NULL;
     }
+	
+    void createnode(int value)
+	{
+		node *temp=new node;
+		temp->data=value;
+		temp->next=NULL;
+		if(head==NULL)
+		{
+			head=temp;
+			tail=temp;
+			temp=NULL;
+		}
+		else
+		{	
+			tail->next=temp;
+			tail=temp;
+		}
+	}
   };
 
 
