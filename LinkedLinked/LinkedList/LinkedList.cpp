@@ -47,7 +47,7 @@ void print_list(List * list) {
 	Node *n = list->head;
 
     while (n != NULL) {
-        cout << n->data << " ";
+        cout << n->data << endl;
         n = n->next;
     }
 	cout << endl;
